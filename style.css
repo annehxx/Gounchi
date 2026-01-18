@@ -119,6 +119,85 @@ body {
   font-size: 1.5rem;
 }
 
+/* ===== MOBILE: HEADER / NAV / HERO OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  /* Header spacing */
+  .nav {
+    padding: 1.1rem 1.2rem;
+  }
+
+  /* Brand: logo + name */
+  .nav-brand {
+    gap: 0.8rem;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+    letter-spacing: 0.18em;
+    line-height: 1;
+  }
+
+  /* Show toggle + make it luxury */
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.25rem;
+  }
+
+  /* Mobile menu panel */
+  .nav-list {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: calc(100% + 0.8rem);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.7rem 1rem;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Your JS toggles this class already */
+  .nav-list.nav-list-active {
+    display: flex;
+  }
+
+  /* Each item as a clean row */
+  .nav-list li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link {
+    display: block;
+    padding: 1rem 0.3rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+  }
+
+  /* Center underline hover works, but reduce spacing on mobile */
+  .nav-link::after {
+    bottom: -4px;
+  }
+}
+
 /* ===== GLASS HERO BOX ===== */
 .glass {
   backdrop-filter: blur(14px);
@@ -159,6 +238,7 @@ body {
   color: #fff;
 }
 
+
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -183,6 +263,46 @@ body {
 
 .btn:hover {
   background: #000;
+}
+
+@media (max-width: 768px) {
+  /* Hero height + safe top padding so content won't fight with header */
+  .hero {
+    min-height: 100svh;
+    padding: 6.5rem 1.2rem 2.5rem; /* top accounts for header */
+    align-items: flex-start; /* feels more premium than dead-center */
+  }
+
+  /* Glass card size for mobile */
+  .glass {
+    width: 100%;
+    max-width: 520px;
+    padding: 2rem 1.6rem;
+    border-radius: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    line-height: 1.8;
+    opacity: 0.9;
+  }
+
+  /* CTA sizing on mobile (luxury: slightly smaller, more spacing) */
+  .btn {
+    margin-top: 1.6rem;
+    padding: 0.9rem 2.2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+  }
 }
 
 /* ================= Sections ================= */
@@ -323,141 +443,140 @@ body {
   }
 }
 
-
 /* ================= Contact ================= */
 
 .contact {
-    padding: 8rem 2rem;
-    background: #111; /* deep luxe */
-    color: #fff;
-  }
-  
-  .contact-inner {
-    max-width: 950px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 2.6rem;
-    font-weight: 400;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-subtitle {
-    max-width: 720px;
-    margin: 0 auto 3.5rem;
-    color: rgba(255, 255, 255, 0.78);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    line-height: 1.9;
-  }
-  
-  /* glass card */
+  padding: 8rem 2rem;
+  background: #111; /* deep luxe */
+  color: #fff;
+}
+
+.contact-inner {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.contact-subtitle {
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+  color: rgba(255, 255, 255, 0.78);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
+
+/* glass card */
+.contact-card {
+  margin: 0 auto;
+  padding: 2.2rem 2.2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+  text-align: left;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.5rem;
+  padding: 1.2rem 0;
+}
+
+.contact-row + .contact-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-link,
+.contact-text {
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.contact-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.contact-link:hover::after {
+  transform: scaleX(1);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* actions */
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.2rem;
+  flex-wrap: wrap;
+}
+
+/* Use your existing .btn style, but add a light variant */
+.btn.btn-light {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+.btn.btn-light::before {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.contact-note {
+  margin-top: 2.8rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+}
+
+/* responsive */
+@media (max-width: 700px) {
   .contact-card {
-    margin: 0 auto;
-    padding: 2.2rem 2.2rem;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
     text-align: left;
+    padding: 1.6rem;
   }
-  
+
   .contact-row {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 1.5rem;
-    padding: 1.2rem 0;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
-  
-  .contact-row + .contact-row {
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-  }
-  
-  .contact-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.65);
-  }
-  
-  .contact-link,
-  .contact-text {
-    font-size: 1rem;
-    letter-spacing: 0.06em;
-    color: rgba(255, 255, 255, 0.92);
-  }
-  
-  .contact-link {
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    width: fit-content;
-  }
-  
-  .contact-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.35);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.35s ease, background 0.35s ease;
-  }
-  
-  .contact-link:hover::after {
-    transform: scaleX(1);
-    background: rgba(255, 255, 255, 0.75);
-  }
-  
-  /* actions */
-  .contact-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2.2rem;
-    flex-wrap: wrap;
-  }
-  
-  /* Use your existing .btn style, but add a light variant */
-  .btn.btn-light {
-    border-color: rgba(255, 255, 255, 0.7);
-    color: #fff;
-  }
-  
-  .btn.btn-light::before {
-    background: rgba(255, 255, 255, 0.12);
-  }
-  
-  .contact-note {
-    margin-top: 2.8rem;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.85rem;
-    letter-spacing: 0.06em;
-    line-height: 1.9;
-  }
-  
-  /* responsive */
-  @media (max-width: 700px) {
-    .contact-card {
-      text-align: left;
-      padding: 1.6rem;
-    }
-  
-    .contact-row {
-      grid-template-columns: 1fr;
-      gap: 0.5rem;
-    }
-  }
+}
 
 /* ================= Footer ================= */
 
