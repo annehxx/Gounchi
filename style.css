@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
   
   body {
@@ -16,18 +17,51 @@
   
   .header {
     width: 100%;
-    background: #fff;
-    position: fixed;
+    position: absolute; /* instead of fixed */
     top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #eee;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .logo-img {
+    width: 48px;
+    height: auto;
+  }
+  
+  .logo-text {
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Playfair Display", serif;
   }
   
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1.8rem 3.5rem;
+    animation: navFade 1.2s ease forwards;
+  }
+
+  @keyframes navFade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center;
   }
   
   .nav-list {
@@ -38,9 +72,10 @@
   
   .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
     transition: color .3s ease;
+    font-size: 1.5rem;
   }
   
   .nav-link:hover {
@@ -52,6 +87,33 @@
     background: none;
     border: none;
     font-size: 1.5rem;
+  }
+
+  /* ===== GLASS HERO BOX ===== */
+.glass {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Center content inside glass */
+  .glass .hero-content {
+    text-align: center;
+  }
+
+  .glass h1 {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  .glass p {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
   }
   
   /* ================= Hero ================= */
@@ -74,13 +136,19 @@
   
   .btn {
     display: inline-block;
-    margin-top: 1rem;
-    padding: .75rem 1.5rem;
-    background: #222;
+    margin-top: 2rem;
+    padding: 0.9rem 2.8rem;
+    background: transparent;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background .3s ease;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
   }
   
   .btn:hover {
