@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Site Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">YourLogo</a>
+      <ul class="nav-list" id="navList">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Your Hero Heading</h1>
+      <p>Catchy tagline or short intro about you or your services.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>Short introduction text about who you are and what you do.</p>
+  </section>
+
+  <!-- ===== Gallery / Work ===== -->
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <!-- add more items -->
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Place your contact info / form here.</p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const navList = document.getElementById("navList");
+
+    navToggle.addEventListener("click", () => {
+      navList.classList.toggle("nav-list-active");
+    });
+  </script>
+</body>
+</html>
