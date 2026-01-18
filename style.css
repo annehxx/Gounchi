@@ -1,205 +1,263 @@
 /* ================= Base ================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    color: #222;
-    line-height: 1.6;
-  }
-  
-  /* ================= Navigation ================= */
-  
-  .header {
-    width: 100%;
-    position: absolute; /* instead of fixed */
-    top: 0;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  .logo-img {
-    width: 48px;
-    height: auto;
-  }
-  
-  .logo-text {
-    font-size: 2.2rem;
-    font-weight: 400;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.8rem 3.5rem;
-    animation: navFade 1.2s ease forwards;
-  }
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
 
-  @keyframes navFade {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .nav-brand {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-list {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: color .3s ease;
-    font-size: 1.5rem;
-  }
-  
-  .nav-link:hover {
-    color: #000;
-  }
-  
-  .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-  }
+/* ================= Navigation ================= */
 
-  /* ===== GLASS HERO BOX ===== */
+.header {
+  width: 100%;
+  position: absolute; /* instead of fixed */
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-img {
+  width: 48px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 3.5rem;
+  animation: navFade 1.2s ease forwards;
+}
+
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* ===== GLASS HERO BOX ===== */
 .glass {
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 3rem 4rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 3rem 4rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Center content inside glass */
+.glass .hero-content {
+  text-align: center;
+}
+
+.glass h1 {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.glass p {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* ================= Hero ================= */
+
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2.8rem;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: #000;
+}
+
+/* ================= Sections ================= */
+
+.section {
+  padding: 4rem 2rem;
+}
+
+/* ================= About ================= */
+
+.about {
+  background: #f7f6f4; /* warmes Off-White */
+  padding: 8rem 2rem;
+}
+
+.about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headline */
+.about h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+  color: #111;
+}
+
+/* Body text */
+.about p {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #333;
+}
+
+.about p br {
+  content: "";
+  display: block;
+  margin: 2rem 0;
+}
+
+.about h2,
+.about p {
+  font-family: "Playfair Display", serif;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #111;
+  margin-top: 1.5rem;
+}
+
+.about {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  /* Center content inside glass */
-  .glass .hero-content {
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  background: #ccc;
+  height: 150px;
+}
+
+/* ================= Footer ================= */
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #222;
+  color: #fff;
+}
+
+/* ================= Responsive Nav ================= */
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    display: none;
+    width: 100%;
   }
 
-  .glass h1 {
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-  }
-  
-  .glass p {
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-  }
-  
-  /* ================= Hero ================= */
-  
-  .hero {
-    height: 100vh;
-    background: url("images/hero.jpg") center/cover no-repeat;
+  .nav-list.nav-list-active {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 2rem;
-    color: #fff;
   }
-  
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: .5rem;
+
+  .nav-toggle {
+    display: block;
   }
-  
-  .btn {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.9rem 2.8rem;
-    background: transparent;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    font-size: 0.8rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .btn:hover {
-    background: #000;
-  }
-  
-  /* ================= Sections ================= */
-  
-  .section {
-    padding: 4rem 2rem;
-  }
-  
-  .about {
-    background: #f9f9f9;
-  }
-  
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-  
-  .gallery-item {
-    background: #ccc;
-    height: 150px;
-  }
-  
-  /* ================= Footer ================= */
-  
-  .footer {
-    text-align: center;
-    padding: 2rem;
-    background: #222;
-    color: #fff;
-  }
-  
-  /* ================= Responsive Nav ================= */
-  
-  @media (max-width: 768px) {
-    .nav-list {
-      flex-direction: column;
-      display: none;
-      width: 100%;
-    }
-  
-    .nav-list.nav-list-active {
-      display: flex;
-    }
-  
-    .nav-toggle {
-      display: block;
-    }
-  }
-  
+}
