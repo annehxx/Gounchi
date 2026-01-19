@@ -714,3 +714,91 @@ body {
   }
 }
 
+/* ================= Rates – Additional Information ================= */
+
+.rates-info {
+  background: #fff;
+  padding: 7rem 2rem;
+}
+
+.rates-info-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rates-info h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 4.5rem;
+  text-align: center;
+}
+
+.info-block + .info-block {
+  margin-top: 4.5rem;
+}
+
+.info-block h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.6rem;
+}
+
+.info-block p {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #333;
+  max-width: 720px;
+}
+
+.info-block p + p {
+  margin-top: 1.6rem;
+}
+
+/* Elegant list style */
+.info-list {
+  list-style: none;
+  padding: 0;
+  max-width: 720px;
+}
+
+.info-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #333;
+}
+
+.info-list li + li {
+  margin-top: 1.3rem;
+}
+
+.info-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+  .rates-info {
+    padding: 5rem 1.5rem;
+  }
+
+  .rates-info h2 {
+    font-size: 2rem;
+  }
+
+  .info-block h3 {
+    font-size: 1.3rem;
+  }
+}
+
+
