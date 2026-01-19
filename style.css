@@ -968,3 +968,37 @@ body {
     font-size: 1.05rem;
   }
 }
+/* ================= Thank You Page ================= */
+
+.thank-you-hero {
+  background: url("images/hero2.jpg") center/cover no-repeat;
+}
+
+.thank-you-glass {
+  padding: 3.5rem 4.5rem;
+}
+
+.thank-you-glass h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.18em;
+}
+
+.thank-you-glass p {
+  margin-top: 1.4rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .thank-you-glass {
+    padding: 2.2rem 1.6rem;
+  }
+
+  .thank-you-glass h1 {
+    font-size: 2.1rem;
+  }
+}
+

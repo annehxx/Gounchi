@@ -55,63 +55,81 @@
           reply.
         </p>
 
-        <!-- IMPORTANT:
-         action = Google Apps Script URL (see step 3)
-    -->
         <form
           class="booking-form"
-          action="https://formspree.io/f/XXXXYYYY"
+          action="https://formspree.io/f/mzddgaaz"
           method="POST"
         >
+          <!-- Formspree settings -->
           <input
             type="hidden"
             name="_subject"
             value="New Booking Request — Cleo Fox"
           />
-          <input type="hidden" name="_next" value="https://DEINUSERNAME.github.io/DEINREPO/thank-you.html">
-          <input type="text" name="name" placeholder="Name*" required />
-          <input type="email" name="email" placeholder="Email*" required />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_gotcha" style="display: none" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https:annehxx.github.io/Gounchi/thank-you.html"
+          />
 
-          <input type="date" name="date" required />
+          <!-- Name -->
+          <input type="text" name="Name" placeholder="Name*" required />
+
+          <!-- Email -->
+          <input type="email" name="Email" placeholder="Email*" required />
+
+          <!-- Preferred Date -->
+          <input type="date" name="Preferred Date" required />
+
+          <!-- Preferred Time -->
           <input
             type="text"
-            name="time"
+            name="Preferred Time"
             placeholder="Preferred time*"
             required
           />
 
+          <!-- Duration -->
           <input
             type="text"
-            name="duration"
+            name="Duration"
             placeholder="How long would you like to meet for?*"
             required
           />
 
+          <!-- Date Idea -->
           <textarea
-            name="date_idea"
+            name="Date Idea"
             placeholder="What do you have in mind for our date?*"
             required
           ></textarea>
 
+          <!-- About You -->
           <textarea
-            name="about_you"
+            name="About You"
             placeholder="I would love to know more about you — tell me about yourself.*"
             required
           ></textarea>
 
+          <!-- Deposit checkbox -->
           <label class="checkbox">
-            <input type="checkbox" name="deposit" required />
-            I understand a deposit will be required to confirm our booking.
+            <input type="checkbox" name="Deposit Acknowledged" required />
+            I understand that a deposit will be required to confirm our booking.
           </label>
 
-          <button type="submit" class="submit btn">Submit Request</button>
+          <!-- Submit -->
+          <button type="submit" class="submit btn">
+            Submit Booking Request
+          </button>
         </form>
 
         <p class="booking-help">
           Having trouble with the form? Email me directly at
-          <a href="mailto:cleo.escort.berlin@gmail.com"
-            >cleo.escort.berlin@gmail.com</a
-          >
+          <a href="mailto:cleo.escort.berlin@gmail.com">
+            cleo.escort.berlin@gmail.com
+          </a>
         </p>
       </div>
     </section>
