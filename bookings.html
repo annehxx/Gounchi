@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking – Cleo Fox</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo-white.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav-brand">
+          <img
+            src="images/logo-white.png"
+            class="logo-img"
+            alt="Cleo Fox logo"
+          />
+          <span class="logo-text">Cleo Fox</span>
+        </div>
+
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="rates.html" class="nav-link">Rates</a></li>
+          <li><a href="booking.html" class="nav-link active">Booking</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="navToggle">☰</button>
+      </nav>
+    </header>
+
+    <!-- ===== Booking Hero ===== -->
+    <section class="rates-hero">
+      <div class="rates-hero-inner">
+        <h1>Booking</h1>
+        <p>Thoughtful introductions lead to unforgettable encounters.</p>
+      </div>
+    </section>
+
+    <!-- ===== Booking Form ===== -->
+    <section class="rates-section">
+      <div class="rates-inner">
+        <h2>Booking Form</h2>
+
+        <p class="booking-note">
+          My booking form is our introduction. Please take the time to answer
+          thoughtfully. Incomplete or careless inquiries will not receive a
+          reply.
+        </p>
+
+        <!-- IMPORTANT:
+         action = Google Apps Script URL (see step 3)
+    -->
+        <form
+          class="booking-form"
+          action="PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Name*" required />
+          <input type="email" name="email" placeholder="Email*" required />
+
+          <input type="date" name="date" required />
+          <input
+            type="text"
+            name="time"
+            placeholder="Preferred time*"
+            required
+          />
+
+          <input
+            type="text"
+            name="duration"
+            placeholder="How long would you like to meet for?*"
+            required
+          />
+
+          <textarea
+            name="date_idea"
+            placeholder="What do you have in mind for our date?*"
+            required
+          ></textarea>
+
+          <textarea
+            name="about_you"
+            placeholder="I would love to know more about you — tell me about yourself.*"
+            required
+          ></textarea>
+
+          <label class="checkbox">
+            <input type="checkbox" name="deposit" required />
+            I understand a deposit will be required to confirm our booking.
+          </label>
+
+          <button type="submit" class="submit btn">Submit Request</button>
+        </form>
+
+        <p class="booking-help">
+          Having trouble with the form? Email me directly at
+          <a href="mailto:cleo.escort.berlin@gmail.com"
+            >cleo.escort.berlin@gmail.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="rates-info">
+      <div class="rates-info-inner">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question">
+              How can I make sure we meet?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Please complete my booking form in full, or if reaching out via
+                email, ensure all requested details are included. I am selective
+                about who I spend my time with and do not respond to rude
+                inquiries or requests for unsafe services.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How far in advance should I plan our date?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The earlier you plan, the better. Ideally, bookings should be
+                made at least one week in advance. I am generally unavailable
+                for same-day bookings in Berlin, though occasional exceptions
+                may occur while on tour.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Are you kinky?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. I have extensive kink experience and enjoy dominance. If
+                you have a particular kink or fetish in mind, feel free to
+                mention it in your booking inquiry.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you have a list of services?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                I offer classic GFE and sensual domination. Rather than working
+                from a checklist, I prefer to let our unique connection guide
+                the experience. If you have something specific in mind, please
+                mention it.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Where can we meet?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>In Berlin, I exclusively offer outcalls to hotels.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Will you travel to my city?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                If you would like me to come to you, you can book me for an FMTY
+                (Fly-Me-To-You). FMTY is the only guaranteed way to ensure we
+                meet outside of my tour schedule.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you see clients of all backgrounds?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. I do not discriminate based on race, body type, age, or
+                ability. Respect and adherence to my booking protocols are the
+                only requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer duos or see couples?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes to both. I work with trusted provider friends for duo
+                experiences, and I love playing with couples. Please share your
+                interests in your inquiry.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you allow photos or videos?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, under clearly defined conditions discussed in advance.
+                Different terms apply depending on the type of content and its
+                intended use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Cleo Fox. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navList = document.getElementById("navList");
+
+      navToggle.addEventListener("click", () => {
+        navList.classList.toggle("nav-list-active");
+        document.body.classList.toggle("menu-open");
+      });
+
+      document.querySelectorAll(".faq-question").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
