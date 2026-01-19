@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery – Cleo Fox</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo-white.png" />
+  </head>
+
+  <body>
+    <!-- ===== Navigation ===== -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav-brand">
+          <img
+            src="images/logo-white.png"
+            alt="Cleo Fox logo"
+            class="logo-img"
+          />
+          <span class="logo-text">Cleo Fox</span>
+        </div>
+
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="rates.html" class="nav-link active">Rates</a></li>
+          <li><a href="bookings.html" class="nav-link">Booking</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="navToggle">☰</button>
+      </nav>
+    </header>
+
+    <!-- ===== Gallery Hero ===== -->
+    <section class="gallery-hero">
+      <div class="glass gallery-hero-glass">
+        <div class="hero-content">
+          <h1>Gallery</h1>
+          <p>A curated selection of moments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery Grid ===== -->
+    <section class="gallery-page">
+      <div class="gallery-page-inner">
+        <div class="gallery-grid gallery-grid-page">
+          <!-- Replace image filenames as needed -->
+          <a
+            class="gallery-item"
+            href="images/bild1.jpg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/bild1.jpg" alt="" />
+          </a>
+          <a
+            class="gallery-item"
+            href="images/bild2.jpg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/bild2.jpg" alt="" />
+          </a>
+          <a
+            class="gallery-item"
+            href="images/bild3.jpg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/bild3.jpg" alt="" />
+          </a>
+
+          <!-- Add more -->
+          <a
+            class="gallery-item"
+            href="images/bild4.jpg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/bild4.jpg" alt="" />
+          </a>
+          <a
+            class="gallery-item"
+            href="images/bild5.jpg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/bild5.jpg" alt="" />
+          </a>
+          <a
+            class="gallery-item"
+            href="images/bild6.jpg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/bild6.jpg" alt="" />
+          </a>
+        </div>
+
+        <p class="gallery-discretion">
+          Discretion is appreciated. Please do not share or redistribute any
+          images.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <p>&copy; 2026 Cleo Fox. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navList = document.getElementById("navList");
+
+      navToggle.addEventListener("click", () => {
+        navList.classList.toggle("nav-list-active");
+        document.body.classList.toggle("menu-open");
+      });
+    </script>
+  </body>
+</html>
