@@ -356,7 +356,6 @@ body {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 3 / 4;
   background: #eee;
 }
 
@@ -1078,4 +1077,6 @@ body {
   letter-spacing: 0.08em;
   opacity: 0.7;
 }
+
+
 
