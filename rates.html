@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rates – Cleo Fox</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo-white.png" />
+  </head>
+
+  <body>
+    <!-- ===== Navigation (reuse) ===== -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav-brand">
+          <img
+            src="images/logo-white.png"
+            alt="Cleo Fox logo"
+            class="logo-img"
+          />
+          <span class="logo-text">Cleo Fox</span>
+        </div>
+
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="rates.html" class="nav-link active">Rates</a></li>
+          <li><a href="index.html#booking" class="nav-link">Booking</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="navToggle">☰</button>
+      </nav>
+    </header>
+
+    <!-- ===== Rates Hero ===== -->
+    <section class="rates-hero">
+      <div class="rates-hero-inner">
+        <h1>Rates</h1>
+        <p>An invitation to unhurried time, presence, and shared moments.</p>
+      </div>
+    </section>
+
+    <!-- ===== Rates Content ===== -->
+    <section class="rates-section">
+      <div class="rates-inner">
+        <div class="rate-item">
+          <div class="rate-head">
+            <span class="rate-duration">2 Hours</span>
+            <span class="rate-price">950 €</span>
+          </div>
+          <p class="rate-desc">
+            Perfect for an introduction for new clients. Let’s meet in your
+            hotel room or at your place.
+          </p>
+        </div>
+
+        <div class="rate-item">
+          <div class="rate-head">
+            <span class="rate-duration">3 Hours</span>
+            <span class="rate-price">1.150 €</span>
+          </div>
+          <p class="rate-desc">
+            Let’s get to know each other over a drink, a coffee, or lunch before
+            disappearing into each other’s arms.
+          </p>
+        </div>
+
+        <div class="rate-item">
+          <div class="rate-head">
+            <span class="rate-duration">4 Hours</span>
+            <span class="rate-price">1.400 €</span>
+          </div>
+          <p class="rate-desc">
+            A shared lunch together before retreating to the hotel room. Time
+            slips away when all your senses are awakened.
+          </p>
+        </div>
+
+        <div class="rate-item">
+          <div class="rate-head">
+            <span class="rate-duration">6 Hours</span>
+            <span class="rate-price">1.900 €</span>
+          </div>
+          <p class="rate-desc">
+            An afternoon exploring art galleries, an evening show, or perhaps a
+            scenic tour of the city. Or the timeless classic – dinner, drinks,
+            and ample time reserved just for us.
+          </p>
+        </div>
+
+        <div class="rate-item">
+          <div class="rate-head">
+            <span class="rate-duration">8 Hours</span>
+            <span class="rate-price">2.400 €</span>
+          </div>
+          <p class="rate-desc">
+            A relaxing day at the spa. A thrilling night of clubbing and
+            partying. Or maybe a little taste of everything? The more time we
+            have, the more possibilities unfold.
+          </p>
+        </div>
+
+        <div class="rate-item">
+          <div class="rate-head">
+            <span class="rate-duration">24 Hours</span>
+            <span class="rate-price">4.000 €</span>
+          </div>
+          <p class="rate-desc">
+            A full day and night devoted entirely to us. With so much time, the
+            possibilities are endless — what would you imagine us doing
+            together?
+          </p>
+        </div>
+
+        <div class="rate-item highlight">
+          <div class="rate-head">
+            <span class="rate-duration">Overnight</span>
+            <span class="rate-price">3.000 €</span>
+          </div>
+          <p class="rate-desc">
+            The luxury of unhurried time together after dinner, drifting off in
+            each other’s arms. A tender morning, a shared breakfast, and a
+            lingering farewell kiss.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <p>&copy; 2026 Cleo Fox. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navList = document.getElementById("navList");
+
+      navToggle.addEventListener("click", () => {
+        navList.classList.toggle("nav-list-active");
+        document.body.classList.toggle("menu-open");
+      });
+    </script>
+  </body>
+</html>

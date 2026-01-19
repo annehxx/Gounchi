@@ -608,3 +608,109 @@ body {
     letter-spacing: 0.28em;
   }
 }
+
+/* ================= Rates Page ================= */
+
+.rates-hero {
+  min-height: 60vh;
+  background: radial-gradient(
+      circle at 50% 40%,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 6rem 2rem 4rem;
+}
+
+.rates-hero-inner h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.rates-hero-inner p {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* Rates list */
+.rates-section {
+  background: #f7f6f4;
+  padding: 8rem 2rem;
+}
+
+.rates-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rate-item {
+  padding: 2.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.rate-item:last-child {
+  border-bottom: none;
+}
+
+.rate-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.rate-duration {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.rate-price {
+  font-size: 0.9rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.rate-desc {
+  max-width: 720px;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #333;
+  font-family: "Playfair Display", serif;
+}
+
+/* Highlight Overnight subtly */
+.rate-item.highlight {
+  background: rgba(0, 0, 0, 0.04);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .rates-hero-inner h1 {
+    font-size: 2.2rem;
+  }
+
+  .rate-head {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .rate-price {
+    letter-spacing: 0.22em;
+  }
+}
+
